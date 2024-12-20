@@ -3,8 +3,9 @@
   justify-content: center;
   height: 100vh;
   background: url("../images/bg.png");
-  padding-top: 15rem;
+  padding-top: 16rem;
   gap: 2rem;
+
   @media (width < 480px) {
     display: flex;
     flex-direction: column;
@@ -18,14 +19,16 @@
   padding: 5rem 2rem;
   border-radius: 1rem;
   background-color: var(--bgWhite50);
+
   @media (width < 480px) {
-    padding: 2rem 0;
+    padding: 4rem 0;
   }
 }
 
 .cart__card {
   width: 35rem;
   margin-bottom: 3rem;
+
   @media (width < 480px) {
     width: 100%;
     margin-bottom: 1rem;
@@ -52,6 +55,7 @@
   height: 1.5em;
   border: 1px solid gray;
   cursor: pointer;
+
   &:checked {
     border-color: var(--bgBlack);
     background-color: var(--bgBlack);
@@ -60,9 +64,8 @@
 
 .card-header__product-name {
   color: var(--fontBlack100);
-  font-family: Anton;
+  font-family: var(--titleFont);
   font-size: 2.5rem;
-  font-weight: 400;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
   margin-left: 2rem;
@@ -70,6 +73,7 @@
 
 .card-header__right i {
   font-size: 2.5rem;
+
   @media (width < 480px) {
     padding-right: 1rem;
   }
@@ -82,6 +86,7 @@
 .card-content__left {
   width: 15rem;
   height: 15rem;
+
   img {
     width: 100%;
     object-fit: cover;
@@ -101,6 +106,7 @@
   border-radius: 1rem;
   padding: 5rem 2rem;
   background-color: var(--bgWhite50);
+
   @media (width < 480px) {
     width: 100%;
   }
@@ -108,15 +114,17 @@
 
 .cart-destination {
   display: flex;
+
   i,
   h3 {
     color: var(--fontBlack100);
     font-size: 2.5rem;
     line-height: 2.4rem;
   }
+
   h3 {
     margin-left: 2rem;
-    font-family: Anton;
+    font-family: var(--titleFont);
     font-size: 2.5rem;
   }
 }
@@ -124,32 +132,27 @@
 .destination-address {
   margin-top: 3rem;
   color: var(--fontBlack100);
-  font-family: "Space Mono";
+  font-family: var(--mainFont);
   font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 2.4rem;
   text-decoration: underline;
 }
 
 .card-content__product-price {
   color: var(--fontBlack100);
-  font-family: "Space Mono";
+  font-family: var(--mainFont);
   font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 2.4rem;
 }
 
 .card-content__product-amount {
-  font-family: "Space Mono";
+  font-family: var(--mainFont);
   font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 2.4rem;
   padding: 2rem;
   border-radius: 2rem;
   background-color: var(--fontYellow);
+
   @media (width < 480px) {
     padding: 1rem;
   }
@@ -161,6 +164,7 @@
   padding: 5rem 2rem;
   background-color: var(--bgWhite50);
   margin-top: 2rem;
+
   @media (width < 480px) {
     width: 100%;
   }
@@ -170,12 +174,12 @@
   display: flex;
   align-items: center;
   color: var(--fontBlack100);
-  font-family: Anton;
+  font-family: var(--titleFont);
   font-size: 2.5rem;
-  font-weight: 400;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
   padding-bottom: 3rem;
+
   i {
     margin-right: 2rem;
   }
@@ -186,10 +190,8 @@
   justify-content: space-between;
   padding-bottom: 2rem;
   color: var(--fontBlack100);
-  font-family: "Space Mono";
+  font-family: var(--mainFont);
   font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 2.4rem;
 }
 
@@ -205,7 +207,7 @@
 .payment-btn {
   color: var(--fontWhite);
   text-align: center;
-  font-family: Anton;
+  font-family: var(--titleFont);
   font-size: 2rem;
   line-height: 1.5rem;
   letter-spacing: 0.1rem;
@@ -214,6 +216,7 @@
   width: 31.5rem;
   padding: 1.3rem 0;
   margin-bottom: 5.8rem;
+
   @media (width < 480px) {
     width: 100%;
   }
